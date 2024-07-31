@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <h1>Firestore</h1>
+
+  <form id="product-form" class="product-form">
+    <input type="text" placeholder="Product Name" id="product-name" required />
+    <input type="number" placeholder="Product Price" id="product-price" required />
+    <textarea placeholder="Product Detail" id="product-detail" required></textarea>
+    <input type="file" id="product-img">
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div class="allProducts"></div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

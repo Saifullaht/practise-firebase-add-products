@@ -1,0 +1,114 @@
+ /* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Form Styling */
+.product-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-form:focus-within {
+  border-color: #4a90e2;
+  box-shadow: 0 0 15px rgba(74, 144, 226, 0.5);
+}
+
+.product-form input,
+.product-form textarea {
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.product-form input:focus,
+.product-form textarea:focus {
+  border-color: #4a90e2;
+}
+
+/* Button Styling */
+.product-form button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.product-form button:hover {
+  background-color: #357abd;
+  transform: scale(1.05);
+}
+
+/* Products Display Styling */
+.allProducts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.allProducts > div {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.allProducts > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.allProducts > div > h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.allProducts > div > .price {
+  font-size: 1.25rem;
+  color: #4a90e2;
+}
+
+.allProducts > div > span {
+  font-size: 0.875rem;
+  color: #888;
+}
+
+.allProducts > div > p {
+  font-size: 1rem;
+  color: #555;
+}
+
+  
